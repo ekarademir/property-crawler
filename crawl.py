@@ -171,6 +171,17 @@ def save_listings():
 
     csvfile = u'./data-house-rent-listings.csv'
     csvf = codecs.open(csvfile,'w','utf-8')
+    csvline = ",".join([
+        'daftid',
+        'housetype',
+        'address',
+        'price',
+        'currency',
+        'rentperiod',
+        'bedrooms',
+        'bathrooms'
+    ])
+    csvf.write(csvline + "\n")
 
     count = 0
     for fname in savedlistings:
