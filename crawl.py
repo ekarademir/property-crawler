@@ -169,7 +169,7 @@ def save_listings():
                     for x in listdir('./data')
                     if len(re.findall('listpage', x)) > 0]
 
-    csvfile = u'./data-wikibdays-occupations.csv'
+    csvfile = u'./data-house-rent-listings.csv'
     csvf = codecs.open(csvfile,'w','utf-8')
 
     count = 0
