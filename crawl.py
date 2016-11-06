@@ -140,7 +140,7 @@ def parse_line(line):
     csvline = ",".join([
         daftid,
         housetype,
-        address,
+        "\"" + address + "\"",
         price,
         currency,
         rentperiod,
